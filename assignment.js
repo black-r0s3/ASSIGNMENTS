@@ -1,8 +1,22 @@
-let userInput = 10;
-let result = '';
-result = 18 + userInput;
-result = result - 2;
-result = result * 2;
-result = result / 2;
-alert(result);
-alert(userInput);
+const task3Element = document.getElementById('task-3');
+
+function firstFunction(){
+    alert('Hello Nana');
+}
+
+function secondFunction(name){
+    alert(name);
+}
+
+
+secondFunction('Dorcas');
+
+function thirdFunction(first, second, third){
+    alert(first + second + third);
+}
+
+
+task3Element.addEventListener('click', firstFunction);
+
+
+thirdFunction('My name is ', 'Osei Tutu ', 'of Ashanti Region ')
